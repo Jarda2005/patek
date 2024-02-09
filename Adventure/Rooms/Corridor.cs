@@ -10,6 +10,6 @@ namespace Adventure.Rooms
     {
         public override string Name => "Corridor";
 
-        public override string Description => "dark and empty corridor";
+        public override string Description => "dark and empty corridor. You hear something in distance, but it could be something. Or you are already insane.";
     }
 }

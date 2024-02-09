@@ -25,9 +25,10 @@ namespace Adventure
             CurrentRoom = rooms[0];
         }
 
-        public string Intro { get; } = @"
-How did you end up here? You don't really know. Maybe you fell, maybe someone pushed you.
-One thing is certain, you need to GET OUT OF HERE!
-";
+        public string Intro { get; } = @"While collecting scrap for The Company, one of your crewmates went missing inside the facility.
+It's your best friend, so you went there without second thought. But time is ticking and you should be back until 
+midnight, or you will be left behind and die from lack of oxygen! As you approach the facility,
+it sends shivers down your spine. There are a lot of monsters beyond human comprehension 
+and they are eager to kill on you sight. You hope that your colleague is alright as you open the door to the facility.";
     }
 }
