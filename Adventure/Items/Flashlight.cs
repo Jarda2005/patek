@@ -10,6 +10,7 @@ namespace Adventure.Items
     {
         public override string Name => "Flashlight";
 
-        public override string Description => "a Flashlight. Helps with the dark, at least you can see something now. Gives a false feeling of safety.";
+        public override string Description => "a Flashlight. Helps with the dark, at least you can see something now." +
+            " Gives a false feeling of safety.";
     }
 }

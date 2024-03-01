@@ -11,7 +11,12 @@ namespace Adventure.Commands
     {
         public override void Execute(World world, params string[] @params)
         {
-            Console.WriteLine($"You looked around and see a {world.CurrentRoom.Description}");
+            Console.WriteLine($"You look around and see {world.CurrentRoom.Description}");
+            if(world.CurrentRoom.Items.Count > 0)
+            {
+                Console.WriteLine("There's something laying on the ground.");
+                Console.WriteLine(string.Join(",", world.CurrentRoom.Items.Select(i =>i.Name)));
+            }
         }
     }
 }
