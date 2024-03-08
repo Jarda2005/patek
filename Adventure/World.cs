@@ -25,10 +25,8 @@ namespace Adventure
             CurrentRoom = rooms[0];
         }
 
-        public string Intro { get; } = @"While collecting scrap for The Company, one of your crewmates went missing inside the facility.
-It's your best friend, so you went there without second thought. But time is ticking and you should be back until 
-midnight, or you will be left behind and die from lack of oxygen! As you approach the facility,
-it sends shivers down your spine. There are a lot of monsters beyond human comprehension 
-and they are eager to kill on you sight. You hope that your colleague is alright as you open the door to the facility.";
+        public string Intro { get; } = @"You are contained in the depths of the Undead Asylum in the eternal darkness.
+There's no hope of returning from this damned hell. Until now. A corpse of a dead Hollow dropped from above,
+carrying a key from your cell. Lucky coincidence? Who knows. Now it's time to leave this place.";
     }
 }

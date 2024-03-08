@@ -25,7 +25,7 @@ namespace Adventure
                 {
                     var parsedCommandText = commandText.Trim().Split(" ");
                     var command = commands.GetValueOrDefault(parsedCommandText[0]) ?? commands["help"];
-                    command.Execute(world, parsedCommandText.Skip(1).ToArray());
+                    command.Execute(world, string.Join(" ", parsedCommandText.Skip(1).ToArray()));
                 }
             }
         }
@@ -34,7 +34,9 @@ namespace Adventure
         {
             { "look", new LookAroundCommand() },
 
-            { "help", new HelpCommand() }
+            { "help", new HelpCommand() },
+
+            { "inspect", new InfoCommand() }
         };
     }
 }

@@ -11,11 +11,11 @@ namespace Adventure.Rooms
     {
         public override string Name => "Lobby";
 
-        public override string Description => "a lobby inside the facility, the room is almost dark, because the lights on the ceiling are" +
-            " barely functioning";
+        public override string Description => "a lobby outside the cell, the room is almost dark, because the lights from the torches are" +
+            " giving a little light.";
         public Lobby()
         {
-            Items.Add(new Flashlight());
+            Items.Add(new BrokenSwordHilt());
         }
     }
 }
